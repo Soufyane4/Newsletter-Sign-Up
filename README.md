@@ -28,12 +28,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./assets/images/Newsletter-sign-up.png.png)
+![](./assets/images/Newsletter-sign-up.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- This is the [solution URL](https://www.frontendmentor.io/solutions/newsletter-sign-up-BpPf2oyoJX)
+- This is the [live site URL](https://soufyane4.github.io/Newsletter-Sign-Up/)
 
 ## My process
 
