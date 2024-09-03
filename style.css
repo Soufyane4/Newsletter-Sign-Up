@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    color: #242742;;
+}
+
+body {
+    background-color: #242742;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 320px;
+    height: auto;
+    background-color: #fff;
+}
+
+.image-holder {
+    background-image: url(./assets/images/illustration-sign-up-mobile.svg);
+    width: auto;
+    height: 280px;
+    border-radius: 0 0 14px 14px;
+}
+
+.form-section {
+    padding: 30px 20px;
+}
+
+h1 {
+    margin-bottom: 18px;
+}
+
+.form-section > h5 {
+    margin-bottom: 18px;
+    font-weight: 400;
+}
+
+.list-item {
+    display: flex;
+    margin-bottom: 18px;
+    
+}
+
+.list-item img {
+    margin-right: 14px;
+    position: relative;
+    top: -5px;
+}
+
+.list-item h5 {
+    font-weight: 400;
+}
+
+.mail {
+    display: flex;
+    flex-direction: column;
+}
+
+.mail {
+    display: flex;
+    flex-direction: column;
+}
+
+small {
+    font-size: .7rem;
+}
+
+label {
+    font-size: .7rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+    margin-right: 100px;
+}
+
+input {
+    margin-bottom: 18px;
+    height: 45px;
+    outline: none;
+    border: 1px solid #9294a0;
+    border-radius: 6px;
+    padding-left: 16px;
+}
+
+input::placeholder {
+    font-family: "Roboto", sans-serif;
+}
+
+input:focus {
+    border: 1px solid #36384e;
+}
+input:hover {
+    cursor: pointer;
+}
+
+button {
+    height: 45px;
+    background-color: #242742;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    font-size: .9rem;
+    width: 280px;
+    font-family: "Roboto", sans-serif;
+}
+
+button:hover {
+    background-image: linear-gradient(to right, #df3d60, #ff6257);
+    cursor: pointer;
+}
+
+/* =======================================
+    SUCCESS STYLES
+========================================== */
+
+.success-msg {
+    background-color: #fff;
+    height: 100vh;
+    padding: 80px 20px 30px;
+    width: 338px;
+}
+
+.success-msg img {
+    margin-bottom: 30px;
+}
+
+.success-msg p {
+    font-size: .9rem;
+}
+
+span {
+    font-weight: 700;
+}
+
+.success-msg button {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 30px;
+    width: 300px;
+}
+
+
+@media (min-width: 576px) {
+
+    body {
+        height: 100vh;
+    }
+
+    .container {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+                            " alias-form  alias-image";
+        width: 735px;
+        height: 496px;
+        border-radius: 18px;
+        box-shadow: 10px 17px 15px -12px rgba(0,0,0,0.75);
+    }
+
+    .image-section {
+        grid-area: alias-image;
+        width: 345px;
+        display: flex;
+        justify-content: end;
+    }
+
+    .form-section {
+        grid-area: alias-form;
+        padding: 65px 6px 65px 30px ;
+    }
+
+    .image-holder {
+        background-image: url(./assets/images/illustration-sign-up-desktop.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 305px;
+        height: 450px;
+        border-radius: 14px;
+        margin: 22px 0 0;
+    }
+
+    button {
+        width: 337px;
+    }
+
+    .success-msg {
+        width: 370px;
+        height: 370px;
+        padding: 30px;
+        position: relative;
+        border-radius: 18px;
+    box-shadow: 10px 17px 15px -12px rgba(0,0,0,0.75);
+    }
+
+    .success-msg img {
+        margin-bottom: 20px;
+    }
+
+    .success-msg p {
+        font-size: .8rem;
+    }
+
+    label {
+        margin-right: 155px;
+    }
+}

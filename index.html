@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <title>Newsletter sign-up</title>
+</head>
+<body>
+
+  <div class="container">
+    <div class="image-section">
+      <div class="image-holder"></div>
+    </div>
+    <div class="form-section">
+      <h1>Stay updated!</h1>
+      <h5>Join 60,000+ product managers receiving monthly updates on:</h5>
+      <div class="list-item">
+        <img src="./assets/images/icon-list.svg" alt="icon list">
+        <h5>Product discovery and building what matters</h5>
+      </div>
+      <div class="list-item">
+        <img src="./assets/images/icon-list.svg" alt="icon list">
+        <h5>Measuring to ensure updates are a success</h5>
+      </div>
+      <div class="list-item">
+        <img src="./assets/images/icon-list.svg" alt="icon list">
+        <h5>And much more!</h5>
+      </div>
+      <form action="">
+        <div class="mail">
+          <div class="label-line">
+            <label for="">Email address</label>
+          <small></small>
+          </div>
+          <input type="text" name="email" id="email" placeholder="email@company.com">
+        </div>
+        <button onclick="emailValidation()">Subscribe to monthly newsletter</button>
+      </form>
+    </div>
+  </div>
+
+
+  <script src="./inedx.js"></script>
+</body>
+</html>
